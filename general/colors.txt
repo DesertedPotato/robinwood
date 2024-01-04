@@ -1,0 +1,8 @@
+Brown - #873e23
+Light Brown - #8e4d32
+Lightest Brown - #e37b50
+
+Black - #000
+White - #fff
+
+
