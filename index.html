@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;800&display=swap" rel="stylesheet">
 
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -225,14 +227,91 @@
 
     <!-- END OF FAQs -->
 
-    <section class="container testimonials__container">
+    <!-- TESTIMONIALS -->
+
+    <section class="container testimonials__container mySwiper">
         <h2>Das meinen unsere Kunden</h2>
-        <div>
+        <div class="swiper-wrapper">
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                </div>
+                <div class="testimonial__info">
+                    <h5>P. Immelmann</h5>
+                    <small>Geschäftsführerin</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, quisquam.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                </div>
+                <div class="testimonial__info">
+                    <h5>P. Immelmann</h5>
+                    <small>Geschäftsführerin</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, quisquam.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                </div>
+                <div class="testimonial__info">
+                    <h5>P. Immelmann</h5>
+                    <small>Geschäftsführerin</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, quisquam.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="avatar">
+                </div>
+                <div class="testimonial__info">
+                    <h5>P. Immelmann</h5>
+                    <small>Geschäftsführerin</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, quisquam.
+                    </p>
+                </div>
+            </article>
 
         </div>
+    <div class="swiper-pagination"></div>
     </section>
+
+    <!-- END OF TESTIMONIALS -->
 
 
 <script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
+
 </body>
 </html>
